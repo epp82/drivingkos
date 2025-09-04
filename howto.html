@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Οδηγός Ψηφιακών Διαδικασιών</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        .header {
+            background-color: #3b82f6;
+            color: #ffffff;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+        /* Custom CSS to handle the images within the circular containers */
+        .card-image-container {
+            width: 96px; 
+            height: 96px; 
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 640px) {
+            .card-image-container {
+                width: 128px;
+                height: 128px;
+            }
+        }
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="header py-8 mb-8 text-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-2">Οδηγός Ψηφιακών Διαδικασιών</h1>
+        <p class="text-lg sm:text-xl md:text-2xl font-light">Ο δικός σας οδηγός για να διεκπεραιώσετε τις διαδικασίες σας online.</p>
+    </div>
+
+    <main class="container px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section: Οχήματα & Δίπλωμα Οδήγησης -->
+        <section class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">Οχήματα & Δίπλωμα Οδήγησης</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1: Ανανέωση/Αντικατάσταση διπλώματος -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/timoni.jpg?text=Τιμόνι" alt="Τιμόνι" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Ανανέωση διπλώματος οδήγησης</h3>
+                    <p class="text-gray-600 mb-4">Δείτε πώς να ανανεώσετε ή να αντικαταστήσετε το δίπλωμά σας μέσω του gov.gr.</p>
+                    <a href="https://www.youtube.com/watch?v=WkQ6Z6bWVp0" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+
+                <!-- Card 2: PIN για Ιατρική Εξέταση -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/iatroi.jpg" alt="Ιατρικός Φάκελος" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">PIN για Ιατρική Εξέταση</h3>
+                    <p class="text-gray-600 mb-4">Μάθετε πώς να βγάλετε το απαραίτητο PIN για την ιατρική εξέταση του διπλώματος.</p>
+                    <a href="https://www.youtube.com/watch?v=IJX4vsJS2U0" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+
+                <!-- Card 3: Μεταβίβαση Αυτοκινήτου -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/car.jpeg" alt="Αυτοκίνητο" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Μεταβίβαση Αυτοκινήτου</h3>
+                    <p class="text-gray-600 mb-4">Κάντε την μεταβίβαση του αυτοκινήτου σας εύκολα και γρήγορα online.</p>
+                    <a href="https://www.youtube.com/watch?v=ZMVsXPeb6Sw" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+
+                <!-- Card 4: Τέλη Κυκλοφορίας -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/money.jpg?text=€" alt="Ευρώ" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Τέλη Κυκλοφορίας</h3>
+                    <p class="text-gray-600 mb-4">Τυπώστε το ειδοποιητήριο ή μάθετε για τα τέλη κυκλοφορίας με τον μήνα.</p>
+                    <a href="https://www.youtube.com/watch?v=HOWBnPubsNc" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Gov.gr & Γενικές Διαδικασίες -->
+        <section class="mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center md:text-left">Gov.gr & Γενικές Διαδικασίες</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1: Υπεύθυνη Δήλωση -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/sign.jpg?text=Υπογραφή" alt="Υπογραφή" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Υπεύθυνη Δήλωση</h3>
+                    <p class="text-gray-600 mb-4">Δημιουργήστε Υπεύθυνη Δήλωση από το κινητό σας εύκολα και γρήγορα.</p>
+                    <a href="https://www.youtube.com/watch?v=0htY_yFsUXA" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+
+                <!-- Card 2: Εξουσιοδότηση -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/pen2.jpg?text=Εξουσιοδότηση" alt="Εξουσιοδότηση" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Εξουσιοδότηση</h3>
+                    <p class="text-gray-600 mb-4">Μάθετε πώς να κάνετε εξουσιοδότηση μέσω του gov.gr από το κινητό.</p>
+                    <a href="https://www.youtube.com/watch?v=m3Yl6yqDovk" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+
+                <!-- Card 3: myKEPlive ραντεβού -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/calendar.jpg?text=Ημερολόγιο" alt="Ημερολόγιο" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">myKEPlive ραντεβού</h3>
+                    <p class="text-gray-600 mb-4">Κλείστε ραντεβού με το ΚΕΠ online σε 2 λεπτά.</p>
+                    <a href="https://www.youtube.com/watch?v=TPTSrQpnuqs" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+
+                <!-- Card 4: Γνήσιο Υπογραφής -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <div class="card-image-container">
+                        <img src="img/pen.jpg?text=Στυλό" alt="Στυλό" class="card-image">
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2">Γνήσιο Υπογραφής</h3>
+                    <p class="text-gray-600 mb-4">Μάθετε πώς να κάνετε γνήσιο υπογραφής μέσω του gov.gr.</p>
+                    <a href="https://www.youtube.com/watch?v=_-7jruwdHfI" target="_blank" class="mt-auto inline-block bg-blue-500 text-white font-medium py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">Δες το βίντεο</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
